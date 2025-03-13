@@ -72,3 +72,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 }); 
+
+// Slideshow đơn giản cho phần Dự án (nếu muốn thêm)
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll("#projects img");
+    let currentIndex = 0;
+
+    function showNextImage() {
+        images.forEach(img => img.style.display = "none");
+        images[currentIndex].style.display = "block";
+        currentIndex = (currentIndex + 1) % images.length;
+    }
+
+    // Ẩn tất cả ảnh trừ ảnh đầu tiên
+    images.forEach((img, index) => {
+        if (index !== 0) img.style.display = "none";
+    });
+
+    // Chuyển ảnh mỗi 3 giây (tùy chỉnh)
+    setInterval(showNextImage, 3000);
+});
