@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Quản Lý Sinh Viên</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Hệ Thống Quản Lý Sinh Viên</h1>
+        <p class="lead">Nền tảng thông tin sinh viên toàn diện</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="studentsDropdown" role="button" data-bs-toggle="dropdown">
+                            Sinh viên
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="students/student1.html">Sinh viên 1</a></li>
+                            <li><a class="dropdown-item" href="students/student2.html">Sinh viên 2</a></li>
+                            <li><a class="dropdown-item" href="students/student3.html">Sinh viên 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Chào mừng đến với Hệ thống Quản lý Sinh viên</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Hệ thống Quản lý Sinh viên là nền tảng tích hợp giúp theo dõi thông tin sinh viên, điểm số và hoạt động học tập. Hệ thống cung cấp giao diện thân thiện, dễ sử dụng cho cả giáo viên và sinh viên.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <img src="assets/images/campus.jpg" alt="Khuôn viên trường" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Sinh viên tiêu biểu</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/student1.jpg" class="card-img-top" alt="Sinh viên 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nguyễn Văn A</h5>
+                            <p class="card-text">Sinh viên xuất sắc ngành Công nghệ thông tin</p>
+                            <a href="students/student1.html" class="btn btn-primary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/student2.jpg" class="card-img-top" alt="Sinh viên 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Trần Thị B</h5>
+                            <p class="card-text">Sinh viên xuất sắc ngành Kinh tế</p>
+                            <a href="students/student2.html" class="btn btn-primary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/images/student3.jpg" class="card-img-top" alt="Sinh viên 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Lê Văn C</h5>
+                            <p class="card-text">Sinh viên xuất sắc ngành Ngoại ngữ</p>
+                            <a href="students/student3.html" class="btn btn-primary">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Hệ Thống Quản Lý Sinh Viên. Bảo lưu mọi quyền.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
